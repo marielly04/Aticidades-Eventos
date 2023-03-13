@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04</title>
+</head>
+<body>
+    <h1>Farmácia JS</h1>
+    <hr>
+    <p>
+        Medicamento:
+        <input type="text" id="inVeiculo" placeholder="Aspirina">
+    </p>
+    <p>
+        Preço R$:
+        <input type="text" id="inPreco" placeholder="5.60">
+    </p>
+
+    <p>
+        <input type="button" value="Mostrar Promoção">
+    </p>
+
+    <p id="outMedicamento"></p>
+    <p id="outValor"></p>
+
+    <p>Promoção de Aspirina</p>
+    <p>Leve 2 por apenas R$ 11,00</p>
+
+    <script>
+        function converterPreco(){
+            // 1º Criar uma referência aos elementos da página
+            let inTitulo = document.getElementById('inMedicamento')
+            let inDuracao = document.getElementById('inValor')
+            let outTitulo = document.getElementById('outMedicamento')
+            let outReposta = document.getElementById('outValor')
+
+            // Obter os valores dos campos de entrada
+            let Medicamento = inMedicamento.value
+            let Valor =  inValor
+
+            // Lógica de aplicação
+
+
+            // Alterar o contéudo do campo
+            outMedicamento.textContent = Medicamento
+            outValor.textContent = `${valor}`
+        }
+
+            // Criar uma referência para o botão da página 
+            let btnConverter =  document.getElementById('btnConverter')
+            // Atribuir um evento para o meu botão
+            btnConverter.addEventListener('click', converterPreco)
+    </script>
+</body>
+</html>
